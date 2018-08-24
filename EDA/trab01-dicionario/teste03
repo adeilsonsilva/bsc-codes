@@ -1,0 +1,22 @@
+6
+car s 2
+carro
+veiculo de passeio
+house s 2
+casa
+local onde se mora
+dumb a 3
+mudo
+pessoa sem habilidade de falar
+pessoa que fica temporariamente em silencio
+write v 1
+escrever
+jump v 2
+saltar
+pular
+glass s 2
+vidro
+copo
+t car
+t dumb
+e

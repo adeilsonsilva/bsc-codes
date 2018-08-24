@@ -1,0 +1,9 @@
+Construir um programa, que ao receber uma imagem, inverta umas das direções
+da imagem, e então salve em uma arquivo:
+
+A função usada para salvar uma imagem no opencv é:
+ cvSaveImage(NOME_DO_ARQUIVO_DE_SAIDA,IMAGEM)
+
+
+Construa um programa para modificar a imagem para tons de cinza, e então salva
+a imagem em um arquivo.

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm a.out
+clear
+clear
+g++ main.cpp
+./a.out < in1

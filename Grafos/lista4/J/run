@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv J oldJ
+g++ -std=c++11 main.cpp -o J
+./J < ex1

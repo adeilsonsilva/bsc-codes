@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ gtruth_save.cpp `pkg-config --libs --cflags opencv` -o gtruth_save
+g++ gtruth_load.cpp `pkg-config --libs --cflags opencv` -o gtruth_load

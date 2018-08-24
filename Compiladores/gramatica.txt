@@ -1,0 +1,53 @@
+r0 #SS -> #S $
+r1 #S -> #C
+r2 #C -> #Comando #C
+r3 #C -> &
+r4 #Comando -> #Declaracao
+r5 #Comando -> #Alocacao
+r6 #Comando -> #Atribuicao
+r7 #Comando -> #Condicional
+r8 #Comando -> #Loop
+r9 #Comando -> #Leitura
+r10 #Comando -> #Escrita
+r11 #Declaracao -> declare #LIST as #TIPO .
+r12 #LIST -> id
+r13 #LIST -> id[]
+r14 #LIST -> id, #LIST
+r15 #LIST -> id[], #LIST
+r16 #TIPO -> letter
+r17 #TIPO -> number
+r18 #Alocacao -> resize id to #EXPARIT.
+r19 #Atribuicao -> put #EXPARIT in #ID.
+r20 #Atribuicao -> put conststring in id.
+r21 #Condicional -> if #EXPREL then [#C]
+r22 #Condicional -> if #EXPREL then [#C] else [#C]
+r23 #Loop -> for #ID from #EXPARIT to #EXPARIT do [#C]
+r24 #Loop -> foreach #ID in id do [#C]
+r25 #Leitura -> read #ID.
+r26 #Escrita -> print #ID.
+r27 #Escrita -> print conststring.
+r28 #Escrita -> print constchar.
+r29 #Escrita -> print constnum.
+r30 #EXPARIT -> #EXP
+r31 #EXP -> #EXP + #TERMO
+r32 #EXP -> #EXP - #TERMO
+r33 #EXP -> #TERMO
+r34 #TERMO -> #TERMO * #FATOR
+r35 #TERMO -> #TERMO / #FATOR
+r36 #TERMO -> #TERMO % #FATOR
+r37 #TERMO -> #FATOR
+r38 #FATOR -> #OPERANDO
+r39 #FATOR -> (#EXPARIT)
+r40 #FATOR -> - #FATOR
+r41 #OPERANDO -> id
+r42 #OPERANDO -> id[#EXPARIT]
+r43 #OPERANDO -> constnum
+r44 #EXPREL -> #EXPARIT #OPREL #EXPARIT
+r45 #OPREL -> >
+r46 #OPREL -> <
+r47 #OPREL -> <>
+r48 #OPREL -> >=
+r49 #OPREL -> <=
+r50 #OPREL -> =
+r51 #ID -> id
+r52 #ID -> id[#EXPARIT]

@@ -1,0 +1,5 @@
+declare a as letter.
+
+if a <= b then[
+    declare a as number.
+]

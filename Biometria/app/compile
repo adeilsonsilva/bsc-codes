@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Compilando"
+rm main
+g++ -std=c++11 main.cpp `pkg-config --libs --cflags opencv` -o main
+
+echo "=================="
+
+echo "Rodando exemplo"
+# ./main database/1/1_1.jpg database/8/8_5.jpg

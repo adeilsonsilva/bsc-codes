@@ -1,0 +1,1 @@
+A variável num receberá o valor 10. Se a expressão deveria ser avaliada como uma expressão condicional, não será, pois em C o caracter '=' é utilizado para atribuição e não para comparação. A expressão correta seria if(num==10).

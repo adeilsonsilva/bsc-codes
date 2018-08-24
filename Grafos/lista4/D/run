@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv D oldD
+g++ -std=c++11 main.cpp -o D
+./D < ex1

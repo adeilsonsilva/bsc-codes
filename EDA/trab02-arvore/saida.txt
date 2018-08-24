@@ -1,0 +1,71 @@
+existe no com chave: 39
+existe no com chave: 51
+existe no com chave: 63
+nao existe no com chave: 10
+nao existe no com chave: 54
+15
+26
+30
+35
+37
+39
+50
+51
+53
+61
+63
+70
+70
+63
+61
+53
+51
+50
+39
+37
+35
+30
+26
+15
+26
+39
+53
+63
+7
+3
+4
+5
+6
+chave: 15 fesq: nil fdir: nil
+chave: 26 fesq: 15 fdir: nil
+chave: 30 fesq: 26 fdir: 39
+chave: 35 fesq: nil fdir: 37
+chave: 37 fesq: nil fdir: nil
+chave: 39 fesq: 35 fdir: nil
+chave: 50 fesq: 30 fdir: 61
+chave: 51 fesq: nil fdir: nil
+chave: 53 fesq: 51 fdir: nil
+chave: 61 fesq: 53 fdir: 63
+chave: 63 fesq: nil fdir: 70
+chave: 70 fesq: nil fdir: nil
+|0|: 50
+|1|: 30
+|2|: 61
+|3|: 26
+|4|: 39
+|5|: 53
+|6|: 63
+|7|: 15
+|8|: *
+|9|: 35
+|10|: *
+|11|: 51
+|12|: *
+|13|: *
+|14|: 70
+|15|: *
+|16|: *
+|17|: *
+|18|: *
+|19|: *
+|20|: 37

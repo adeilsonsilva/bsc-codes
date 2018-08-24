@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rm a.out
+clear
+clear
+g++ -std=c++11 main.cpp
+echo "====="
+./a.out < in1
+echo "====="
+./a.out < in2
+echo "====="
+./a.out < in3
+echo "====="

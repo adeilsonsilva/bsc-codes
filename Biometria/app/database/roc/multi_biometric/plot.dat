@@ -1,0 +1,11 @@
+set term pngcairo dashed enhanced font 'Arial, 14' size 800,600
+set output "roc.png"
+set xlabel "Taxa de Falsos Positivos"
+set ylabel "Taxa de Verdadeiros Positivos"
+set x2label "Curva ROC"
+set grid
+set key right bottom
+set ytics 0,.2,1
+
+plot "roc.txt" using 1:2 lw 3 lc rgb 'blue' t ''  with line,\
+     #"lim" using 1:2 lw 3 lc rgb 'red' t '' with line

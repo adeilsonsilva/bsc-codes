@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mv C oldC
+g++ -std=c++11 main.cpp -o C
+
+echo "Exemplo 01"
+./C < ex1
+echo "========================================="
+echo "Exemplo 02"
+./C < ex2
+echo "========================================="
+echo "Exemplo 03"
+./C < ex3

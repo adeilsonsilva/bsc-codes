@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=titulo\ ator\ qtdCopias
+comment0.target=Filme(java.lang.String,\ java.lang.String,\ int)
+comment1.params=titulo\ ator\ qtdCopias\ lancamento
+comment1.target=Filme(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getTitulo()
+comment3.params=
+comment3.target=int\ getQtdCopias()
+comment4.params=
+comment4.target=void\ setQtdCopias()
+comment5.params=
+comment5.target=int\ getQtdLocacoes()
+numComments=6

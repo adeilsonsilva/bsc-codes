@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv a oldA
+g++ -std=c++11 main.cpp -o a
+./a < ex1

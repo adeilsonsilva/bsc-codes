@@ -1,0 +1,32 @@
+<html>
+	
+	<head>
+		<title>MATA65 - Computacao Grafica</title>
+		<h1>Malhas Poligonais em Three.js/WebGL.</h1>
+		<h3>Atividade 2 - Objetos 3D</h3>
+
+        <style>
+            button {
+                height: 25px;
+                background-color: #ff0000;
+                color: #fff;
+            }
+
+            .button-container {
+                padding: 5px;
+            }
+        </style>
+	</head>
+
+	<script type="text/javascript" src="../libs/three.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.min.js"></script>
+	<script type="text/javascript" src="2-objetos3D.js"></script>
+	
+	<body>
+		<div id="WebGL-output" ></div>
+        <div class="button-container">
+            <button onclick="drawSuperEllipse();">Superelipsoide</button>
+            <button onclick="drawSuperToroid();">Supertoroide</button>
+        </div>
+	</body>
+</html>

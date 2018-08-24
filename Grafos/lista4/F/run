@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv f oldF
+g++ -std=c++11 main.cpp -o f
+./f < ex1

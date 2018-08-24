@@ -1,0 +1,5 @@
+declare a[],b[], c as number.
+resize a to 10.
+resize b to 10.
+for c from 1+a[4] to 4*b[5] do[declare d as letter. print d.]
+

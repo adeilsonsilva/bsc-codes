@@ -1,0 +1,70 @@
+Visiting: Entrada
+Visiting: A
+Visiting: K
+Visiting: F
+Visiting: J
+Visiting: C
+Visiting: Saida
+Visiting: M
+Visiting: I
+Visiting: H
+Visiting: D
+Visiting: B
+Visiting: *
+From: * To: J
+From: J To: F
+From: F To: A
+From: A To: Entrada
+From: Entrada To: NULL
+Fim!
+Visiting: *
+Visiting: I
+Visiting: J
+Visiting: G
+Visiting: M
+Visiting: E
+Visiting: L
+Visiting: H
+Visiting: G
+Visiting: L
+Visiting: E
+Visiting: I
+Visiting: A
+Visiting: K
+Visiting: J
+Visiting: H
+Visiting: F
+Visiting: *
+Visiting: C
+Visiting: D
+Visiting: Entrada
+Visiting: L
+Visiting: D
+Visiting: F
+Visiting: F
+Visiting: *
+Visiting: C
+Visiting: C
+Visiting: K
+Visiting: I
+Visiting: J
+Visiting: B
+Visiting: I
+Visiting: C
+Visiting: A
+Visiting: K
+Visiting: H
+Visiting: M
+Visiting: L
+Visiting: I
+Visiting: G
+Visiting: B
+Visiting: G
+Visiting: E
+Visiting: Saida
+From: Saida To: K
+From: K To: A
+From: A To: Entrada
+From: Entrada To: NULL
+Fim!
+7

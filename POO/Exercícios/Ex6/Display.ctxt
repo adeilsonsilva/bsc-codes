@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=dH\ dV\ texto
+comment0.target=Display(int,\ int,\ java.lang.String)
+comment1.params=
+comment1.target=void\ getDimensaoHorizontal()
+comment2.params=
+comment2.target=void\ getDimensaoVertical()
+comment3.params=
+comment3.target=void\ getTexto()
+comment4.params=texto
+comment4.target=void\ setTexto(java.lang.String)
+numComments=5

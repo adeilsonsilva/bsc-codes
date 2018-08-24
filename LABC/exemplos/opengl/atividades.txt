@@ -1,0 +1,5 @@
+Desenhar uma figura aleatoria usando umas das primitivas de desenho do
+OpenGL, deve-se posicionar a figura no centro da tela.
+
+Faça o desenho da bandeira do Brasil, utilizando as primitivas do OpenGL.
+Também é aconselhavel utilizar formas coloridas.

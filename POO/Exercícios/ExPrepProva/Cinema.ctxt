@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=nome\ endereco\ telefone\ gerente\ caixa
+comment0.target=Cinema(java.lang.String,\ java.lang.String,\ long,\ java.lang.String,\ double)
+comment1.params=nome\ endereco\ telefone\ gerente\ caixa\ qtd_salas\ qtd_assentos
+comment1.target=Cinema(java.lang.String,\ java.lang.String,\ long,\ java.lang.String,\ double,\ int,\ int)
+comment2.params=
+comment2.target=void\ insereFilmes()
+comment3.params=
+comment3.target=void\ alocaFilmenaSala()
+comment4.params=
+comment4.target=void\ setProgramacao()
+comment5.params=
+comment5.target=void\ pesquisaFilme()
+comment6.params=
+comment6.target=void\ vendeIngresso()
+comment7.params=
+comment7.target=void\ fecharCinema()
+numComments=8

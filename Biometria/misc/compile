@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -std=c++11 convexHull.cpp `pkg-config --libs --cflags opencv` -o convexHull
+g++ -std=c++11 canny.cpp `pkg-config --libs --cflags opencv` -o canny

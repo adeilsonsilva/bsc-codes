@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>MATA65 - Computacao Grafica</title>
+        <h1>Atividade 5 - Shaders e Iluminação</h1>
+        <!-- ALUNO: Adeilson Silva -->
+    </head>
+
+    <script id="phong-vs" type="x-shader/x-vertex">		
+        varying vec3 vNormal; 
+        varying vec3 vPosW;
+        varying vec3 vPos;
+		varying vec2 vUv;	
+
+        uniform float time;
+        uniform float A;
+        uniform float L;
+        uniform float S;
+        uniform float W;
+
+        vec2 sinWave(vec3 objPos) 
+        {
+            vec2 aux;
+
+            aux.x = ( 0.55 * objPos.x ) + 0.5;
+            aux.y = ( -0.55 * objPos.y ) + 0.5;
+
+            float x = A * sin( (W * aux.x) + time * (S * W) );
+            float y = A * sin( (W * aux.y) + time * (S * W) );
+
+            return vec2( aux.x + x, aux.y + y);
+        }
+
+
+        void main(void) { 		
+            vec3 vPos = position;
+            //vPos.y += 0.01;
+
+            vec2 res = sinWave(vPos);
+            vPos.x = res.x;
+            vPos.z = res.y;
+
+            vPosW = (modelMatrix * vec4(vPos, 1.0)).xyz; 
+            vNormal = normalize(normalMatrix * normal);
+            vUv = uv;
+
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( vPos, 1 );  
+        } 
+    </script>
+
+    <script id="phong-fs" type="x-shader/x-fragment">
+        uniform float time;
+        varying vec3 vPos;
+        
+
+        uniform vec3 uLPos; 
+
+        varying vec3 vNormal; 
+        varying vec3 vPosW;
+		uniform sampler2D uSampler;
+		uniform vec2 uPixelSize;
+		varying vec2 vUv;	
+
+        void main(void) {
+            /* PHONG */
+            vec4 lColor		= vec4(1.0, 1.0, 1.0, 1.0); 
+            vec4 matAmb		= vec4(0.2, 0.2, 0.2, 1.0); 
+            vec4 matDif 	= vec4(0.0, 0.0, 1.5, 1.0); 
+            vec4 matSpec	= vec4(1.0, 1.0, 1.0, 1.0); 
+
+            vec4 ambient = vec4(lColor.rgb * matAmb.rgb, matAmb.a); 
+
+            vec3 vL = normalize(uLPos - vPosW); 
+            float teta = max(dot(vL, vNormal), 0.0); 
+
+            vec4 diffuse = vec4(lColor.rgb * matDif.rgb * teta, matDif.a); 
+
+            vec3 vV = normalize(cameraPosition - vPosW); 
+            vec3 vR = normalize(reflect(-vL, vNormal)); 
+            float omega = max(dot(vV, vR), 0.0); 
+            vec4 specular = vec4(lColor.rgb * matSpec.rgb * pow(omega,5.0), matSpec.a); 
+
+            gl_FragColor = texture2D( uSampler, vUv ) + clamp(ambient + diffuse + specular, 0.0, 1.0); 
+        } 	
+    </script>
+
+    <script type="text/javascript" src="../libs/three.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.min.js"></script>
+    <script type="text/javascript" src="../libs/examples/js/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="5-shaders.js"></script>
+
+    <body onload="init();">
+        <div id="WebGL-output" ></div>
+    </body>
+</html>

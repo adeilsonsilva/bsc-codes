@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mv G oldG
+g++ -std=c++11 main.cpp -o G
+./G < ex1
+echo "====================="
+./G < ex2

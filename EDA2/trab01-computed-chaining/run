@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm trab01
+rm misc/database
+clear
+clear
+echo -e "Compiling..."
+g++ main.cpp -o trab01
+echo -e "Running!"
+./trab01 < in.1
+# ./trab01

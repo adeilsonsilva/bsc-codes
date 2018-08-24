@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Saves a contour for every image from database
+
+for (( i = 1; i <= 50; i++ )); do
+    for (( j = 1; j <= 5; j++ )); do
+        ./main database/$i/${i}_${j}.jpg database/$i/${i}_${j}
+    done
+done

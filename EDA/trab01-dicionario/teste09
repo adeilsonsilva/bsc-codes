@@ -1,0 +1,34 @@
+9
+car s 2
+carro
+veiculo de passeio
+house s 2
+casa
+local onde se mora
+dumb a 3
+mudo
+pessoa sem habilidade de falar
+pessoa que fica temporariamente em silencio
+write v 1
+escrever
+jump v 2
+saltar
+pular
+glass s 2
+vidro
+copo
+fill v 1
+preencher
+nice a 2
+agradavel
+simpatico
+cap s 1
+bone
+t write
+t cap
+t write
+t nice
+t cap
+t cap
+i 9
+e

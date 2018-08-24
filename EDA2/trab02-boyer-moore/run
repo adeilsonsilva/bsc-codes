@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm trab02
+clear
+clear
+g++ main.cpp -o trab02
+# ./trab02 < in.1

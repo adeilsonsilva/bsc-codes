@@ -1,0 +1,14 @@
+declare id[] as letter. 
+read id[id*(id+id)]. 
+print id[id].
+for id from (id+id*id) to id/id[id-id] do[ 
+    declare id as number. 
+    print "string". 
+    print 'c'. 
+    print 50. 
+]
+if x - 3 > k * b then [
+    declare b as number.
+]else[
+    declare b as number.
+]

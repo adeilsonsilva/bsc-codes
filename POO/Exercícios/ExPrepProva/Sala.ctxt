@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=numero\ qtd_assentos
+comment0.target=Sala(int,\ int)
+comment1.params=titulo\ ator\ lancamento\ faixa
+comment1.target=void\ setFilme(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getTitulo()
+comment3.params=qtd_ing
+comment3.target=boolean\ vendeIngresso(int)
+comment4.params=
+comment4.target=int\ getFrequencia()
+numComments=5

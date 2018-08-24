@@ -1,0 +1,11 @@
+UNIVERSIDADE FEDERAL DA BAHIA
+INSTITUTO DE MATEMÁTICA
+DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO
+
+Primeiro Trabalho de MATA60 - Compiladores
+
+Adeilson Silva
+
+2014.2
+
+Compiling: gcc -Wall -o a.out main.c

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# for (( i = 1; i <= 50; i++ )); do
+#     # echo $i;
+#     # mkdir $i;
+#     echo "${i}_*.jpg $i"
+#     mv ${i}_*.jpg $i
+# done
+
+for (( i = 1; i <= 13; i++ )); do
+    echo "${i}_*.txt $i"
+    mv ${i}_*.txt $i
+done

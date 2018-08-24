@@ -1,0 +1,1 @@
+O programa lê um número passado pelo usuário e printa esse número na tela.

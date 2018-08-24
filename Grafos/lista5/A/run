@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mv A oldA
+g++ -std=c++11 main.cpp -o A
+
+echo "Exemplo 01"
+./A < ex1
+echo "========================================="
+echo "Exemplo 02"
+./A < ex2
